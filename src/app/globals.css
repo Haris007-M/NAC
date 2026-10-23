@@ -52,6 +52,8 @@
 
 @keyframes orb { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(60px,40px) scale(1.15); } }
 
+@keyframes spin3d { from { transform: rotateY(0); } to { transform: rotateY(360deg); } }
+
 /* Floating product (product page) */
 .float-soft { animation: float-soft 6s ease-in-out infinite; }
 @keyframes float-soft { 50% { transform: translateY(-8px); } }
