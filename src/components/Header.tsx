@@ -76,8 +76,8 @@ export function Header() {
               <span aria-hidden>⌕</span>
               <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search products" aria-label="Search products" className="w-40 bg-transparent text-sm outline-none" />
             </form>
-            <button onClick={() => setOpen(true)} aria-label="Open bag" className="relative hidden h-10 w-10 place-items-center rounded-full border border-line md:grid dark:border-white/10">
-              🛍{count > 0 && <span className="absolute -right-1 -top-1 grid h-5 min-w-5 place-items-center rounded-full bg-rasp px-1 text-[11px] font-bold text-white">{count}</span>}
+            <button onClick={() => setOpen(true)} aria-label="Open bag" className="relative grid h-10 w-10 place-items-center rounded-full border border-line transition hover:border-rasp dark:border-white/10">
+              <svg viewBox="0 0 24 24" className="h-5 w-5 fill-none stroke-current stroke-[1.8]" strokeLinejoin="round" strokeLinecap="round" aria-hidden="true"><path d="M6 8h12l1 12H5zM9 8V6a3 3 0 0 1 6 0v2" /></svg>{count > 0 && <span className="absolute -right-1 -top-1 grid h-5 min-w-5 place-items-center rounded-full bg-rasp px-1 text-[11px] font-bold text-white">{count}</span>}
             </button>
           </div>
         </div>

@@ -23,7 +23,7 @@ function PayBadge({ children, bg = "bg-white" }: { children: React.ReactNode; bg
 
 export function Footer() {
   return (
-    <footer className="relative mt-24 overflow-hidden bg-ink pb-20 text-white md:pb-0">
+    <footer className="relative mt-24 overflow-hidden bg-ink text-white">
       <div className="absolute inset-x-0 top-0 h-[3px] bg-brand" />
       <div className="mx-auto flex max-w-[1400px] flex-col items-stretch gap-5 border-b border-white/10 px-5 py-9 text-center md:flex-row md:items-center md:justify-between md:px-8 md:text-left">
         <div><h3 className="font-head text-2xl font-extrabold">Join the NAC glow list</h3><p className="text-white/65">Routine tips, new arrivals and 10% off your first order.</p></div>
