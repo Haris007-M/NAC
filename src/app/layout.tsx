@@ -15,12 +15,12 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
   icons: { icon: "/logo.svg" },
 };
-export const viewport: Viewport = { themeColor: "#d12e6b", viewportFit: "cover" };
+export const viewport: Viewport = { themeColor: "#0e0c0f", viewportFit: "cover" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const orgLd = { "@context": "https://schema.org", "@type": "Store", name: "NACosmetics", alternateName: "NAC", url: SITE_URL, logo: `${SITE_URL}/logo.svg`, description: "Authentic Korean skincare shipped worldwide." };
   return (
-    <html lang="en" className={`${archivo.variable} ${bodoni.variable}`}>
+    <html lang="en" className={`dark ${archivo.variable} ${bodoni.variable}`} style={{ colorScheme: "dark" }}>
       <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLd) }} />
         {children}
